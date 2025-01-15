@@ -1,0 +1,359 @@
+/*MENU DROPDOWN FEATURE*/
+.dropdown {
+            /* Border */
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            display: flex;
+
+            /* Reset list styles */
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #aaa;
+            
+        }
+
+.dropdown li {
+    /* Spacing */
+    padding: 8px;
+
+    /* Used to position the sub dropdown */
+    position: relative;
+    background-color: #aaa;
+    color: black;
+}
+              
+/* The sub dropdown */
+.dropdown ul {
+    /* Border */
+    border: 1px solid rgba(0, 0, 0, 0.3);
+
+    /* Hidden by default */
+    display: none;
+
+    /* Absolute position */
+    left: 0;
+    position: absolute;
+    top: 100%;
+
+    /* Reset styles */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    /* Width */
+    width: 200px;
+
+   
+}
+
+/* The second level sub dropdown */
+.dropdown ul ul {
+    left: 100%;
+    position: absolute;
+    top: 0;
+   
+}
+
+/* Change background color of list item when being hovered */
+.dropdown li:hover {
+    background-color: #BAB2B5;
+    
+}
+
+/* Show the direct sub dropdown when hovering the list item */
+.dropdown li:hover > ul {
+    display: block;
+    
+}
+                    
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+  line-height: 1.8;
+}
+.tt{
+  color: black;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+  color: black;
+}
+
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.mainContent {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.sideContent {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Real image */
+.realimg{
+  height:200px;
+  width: 100%;
+  padding: 20px;
+}
+
+.storiesPhoto{
+  width: 60%;
+  height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  height:200px;
+  width: 100%;
+  padding: 20px;
+}
+
+.videos{
+   height:200px;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+   color: black;
+}
+
+.blackcard .card{
+   background-color: black;
+   padding: 20px;
+   margin-top: 20px;
+   color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #ddd;
+  margin-top: 20px;
+}
+
+/*Home page table*/
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+/*MARQUEE FEATURE*/
+.marqueetext {
+font-family:'Comic Sans MS';
+font-size:20px;
+line-height:1.3em;
+color:#000000;
+background-color:#FFFFFF;
+padding:1.5em;
+
+}
+
+/*SOCIAL MEDIA LINK FEATURE*/
+.whatsapp{
+  width: 10%;
+}
+
+.facebook{
+  width: 10%;
+}
+
+.instagram{
+  width: 10%;
+}
+
+.email{
+  width: 10%;
+}
+
+/*TOP TO PAGE FEATURE*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: white;
+}
+
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+/*About Us Profile Pic Shape*/
+.circular--square {
+   border-radius: 50%;
+   width: 100%;
+    }
+
+.container {
+                        /* Align sub-items to top */
+                        align-items: start;
+                        display: flex;
+                    }
+
+                    .container__media {
+                        margin-right: 16px;
+                        width: 200px
+
+                        /* Set the width for the media object */
+                        
+                    }
+
+                    .container__content {
+                        /* Take the remaining width */
+                        flex: 1;
+                    }
+
+/*Photo Gallery Formating*/
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*SEARCH BOX FEATURE*/
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+/*Mobile user friendly format*/
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
